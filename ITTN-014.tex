@@ -1,6 +1,6 @@
 \documentclass[PMO,authoryear,toc]{lsstdoc}
 % lsstdoc documentation: https://lsst-texmf.lsst.io/lsstdoc.html
-\input{meta}
+%\input{meta}
 
 % Package imports go here.
 
@@ -22,7 +22,7 @@ Ivan Gonzalez
 \setDocRef{ITTN-014}
 \setDocUpstreamLocation{\url{https://github.com/lsst-it/ittn-014}}
 
-\date{\vcsDate}
+\date{\today}
 
 % Optional: name of the document's curator
 % \setDocCurator{The Curator of this Document}
@@ -36,7 +36,8 @@ Vera Rubin Observatory has several locations with computing infrastructure. This
 % Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
 % See LPM-51 for version number policy.
 \setDocChangeRecord{%
-  \addtohist{1}{YYYY-MM-DD}{Unreleased.}{Ivan Gonzalez}
+  \addtohist{1}{2020-04-30}{LSST RST Version}{Ivan Gonzalez}
+  \addtohist{2}{2021-05-11}{lsstdoc LaTeX Version}{Ivan Gonzalez}
 }
 
 
@@ -49,13 +50,17 @@ Vera Rubin Observatory has several locations with computing infrastructure. This
 
 % ADD CONTENT HERE
 % You can also use the \input command to include several content files.
-
+\input{laserena.tex}
+\input{cerropachon.tex}
+\input{tucson.tex}
+\input{cloud.tex}
+\newpage
 \appendix
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
-\section{References} \label{sec:bib}
-\renewcommand{\refname}{} % Suppress default Bibliography section
-\bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
+%\section{References} \label{sec:bib}
+%\renewcommand{\refname}{} % Suppress default Bibliography section
+%\bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
 
 % Make sure lsst-texmf/bin/generateAcronyms.py is in your path
 \section{Acronyms} \label{sec:acronyms}
