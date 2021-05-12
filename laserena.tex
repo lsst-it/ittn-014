@@ -1,0 +1,245 @@
+\section{Chile}
+\subsection{La Serena}
+For details of La Serena infrastructure please visit https://confluence.lsstcorp.org/x/4APMBw
+\newpage
+\subsubsection{Antu}
+
+Commissioning Cluster
+
+\begin{center}
+  \begin{tabular}{ |c|c| } 
+   \hline
+   Platform: & Kubernetes \\ 
+   Multicast: & Yes \\ 
+   Apps: & Nublado \\ 
+   Nodes: & 15 \\ 
+   Cpu: & 672 cores \\ 
+   Memory: & 2.7TB \\ 
+   \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{||c c c c||} 
+    \hline
+    Node & CPU & Memory & Network \\ [0.5ex] 
+    \hline\hline
+    antu01.ls.lsst.org & 72 & 376GB & 2x10GB \\
+    \hline
+    antu02.ls.lsst.org & 72 & 376GB & 2x10GB \\
+    \hline
+    antu03.ls.lsst.org & 72 & 376GB & 2x10GB \\
+    \hline
+    antu04.ls.lsst.org & 64 & 187GB & 2x10GB \\
+    \hline
+    antu05.ls.lsst.org & 64 & 187GB & 2x10GB \\
+    \hline
+    antu06.ls.lsst.org & 64 & 187GB & 2x10GB \\
+    \hline
+    antu07.ls.lsst.org & 64 & 187GB & 2x10GB \\
+    \hline
+    antu08.ls.lsst.org & 64 & 187GB & 2x10GB \\
+    \hline
+    antu09.ls.lsst.org & 64 & 187GB & 2x10GB \\
+    \hline
+    ls-dtn01.ls.lsst.org & 48 & 187GB & 2x10GB \\
+    \hline
+    ls-dtn02.ls.lsst.org & 48 & 187GB & 2x10GB \\
+    \hline
+    ls-efdetl01.ls.lsst.org & 40 & 187GB & 2x10GB \\
+    \hline
+    ls-fwrd01.ls.lsst.org & 48 & 92.8GB & 2x10GB \\
+    \hline
+    ls-fwrd02.ls.lsst.org & 48 & 92.8GB & 2x10GB \\
+    \hline
+    ls-handoff01.ls.lsst.org & 24 & 187GB & 2x10GB \\
+    \hline
+    ls-handoff02.ls.lsst.org & 24 & 187GB & 2x10GB \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\newpage
+\subsubsection{Core}
+
+IT Services
+
+\begin{center}
+  \begin{tabular}{ |c|c| } 
+   \hline
+   Platform: & Libvirt \\ 
+   Multicast: & No \\ 
+   Apps: & Foreman, DNS, DHCP \\ 
+   Nodes: & 3 \\ 
+   Cpu: & 96 cores \\ 
+   Memory: & 240GB \\ 
+   \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{||c c c c||} 
+    \hline
+    Node & CPU & Memory & Network \\ [0.5ex] 
+    \hline\hline
+    core01.ls.lsst.org & 32 & 80GB & 2x1GB \\
+    \hline
+    core02.ls.lsst.org & 32 & 80GB & 2x1GB \\
+    \hline
+    core03.ls.lsst.org & 32 & 80GB & 2x1GB \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\subsubsection{Core Dev}
+
+IT Development
+
+\begin{center}
+  \begin{tabular}{ |c|c| } 
+   \hline
+   Platform: & Libvirt \\ 
+   Multicast: & No \\ 
+   Apps: & Several dev instances \\ 
+   Nodes: & 2 \\ 
+   Cpu: & 36 cores \\ 
+   Memory: & 80GB \\ 
+   \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{||c c c c||} 
+    \hline
+    Node & CPU & Memory & Network \\ [0.5ex] 
+    \hline\hline
+    core1.dev.lsst.org & 32 & 80GB & 1x1GB \\
+    \hline
+    core2.dev.lsst.org & 32 & 80GB & 1x1GB \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\newpage
+\subsubsection{Kueyen}
+
+ComCam at the base
+
+\begin{center}
+  \begin{tabular}{ |c|c| } 
+   \hline
+   Platform: & Kubernetes \\ 
+   Multicast: & Yes \\ 
+   Apps: & CSC, EFD \\ 
+   Nodes: & 4 \\ 
+   Cpu: & 128 cores \\ 
+   Memory: & 312GB \\ 
+   \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{||c c c c||} 
+    \hline
+    Node & CPU & Memory & Network \\ [0.5ex] 
+    \hline\hline
+    kueyen01.ls.lsst.org & 32 & 77.9GB & 2x10GB \\
+    \hline
+    kueyen02.ls.lsst.org & 32 & 77.9GB & 2x10GB \\
+    \hline
+    kueyen03.ls.lsst.org & 32 & 77.9GB & 2x10GB \\
+    \hline
+    kueyen04.ls.lsst.org & 32 & 77.9GB & 2x10GB \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\subsubsection{Oracle}
+
+\begin{center}
+  \begin{tabular}{ |c|c| } 
+   \hline
+   Platform: &  \\ 
+   Multicast: & No \\ 
+   Apps: & Oracle \\ 
+   Nodes: & 2 \\ 
+   Cpu: & 96 cores \\ 
+   Memory: & 384GB \\ 
+   \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{||c c c c||} 
+    \hline
+    Node & CPU & Memory & Network \\ [0.5ex] 
+    \hline\hline
+    oradb01.ls.lsst.org & 48 & 192GB & 2x10GB \\
+    \hline
+    oradb02.ls.lsst.org & 48 & 192GB & 2x10GB \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\newpage
+\subsubsection{Ruka}
+
+IT Services
+
+\begin{center}
+  \begin{tabular}{ |c|c| } 
+   \hline
+   Platform: & Kubernetes \\ 
+   Multicast: & No \\ 
+   Apps: &  \\ 
+   Nodes: & 3 \\ 
+   Cpu: & 96 cores \\ 
+   Memory: & 234GB \\ 
+   \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{||c c c c||} 
+    \hline
+    Node & CPU & Memory & Network \\ [0.5ex] 
+    \hline\hline
+    ruka01.ls.lsst.org & 32 & 77.9GB & 2x10GB \\
+    \hline
+    ruka02.ls.lsst.org & 32 & 77.9GB & 2x10GB \\
+    \hline
+    ruka03.ls.lsst.org & 32 & 77.9GB & 2x10GB \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\subsubsection{Rancher La Serena}
+
+La Serena Rancher Platform
+
+\begin{center}
+  \begin{tabular}{ |c|c| } 
+   \hline
+   Platform: & Kubernetes \\ 
+   Multicast: & Yes \\ 
+   Apps: &  \\ 
+   Nodes: & 1 \\ 
+   Cpu: & 12 cores \\ 
+   Memory: & 24GB \\ 
+   \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{||c c c c c||} 
+    \hline
+    Node & CPU & Memory & Network & Host \\ [0.5ex] 
+    \hline\hline
+    rancher01.ls.lsst.org & 4 & 8GB & 1x1GB & core01.ls.lsst.org \\
+    \hline
+    rancher02.ls.lsst.org & 4 & 8GB & 1x1GB & core02.ls.lsst.org \\
+    \hline
+    rancher03.ls.lsst.org & 4 & 8GB & 1x1GB & core03.ls.lsst.org \\
+    \hline
+  \end{tabular}
+\end{center}
