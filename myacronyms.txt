@@ -1,4 +1,11 @@
   GCP:Google Cloud Platform
+  GKE:Google Kubernetes Engine
   LS:La Serena
   CP:Cerro Pachon
   TU:Tucson
+  DHCP:Dynamic Host Configuration Protocol
+  DNS:Domain Name System
+  RST:reStructuredTex
+  WUI:Web User Interface
+  ITTN:IT Technical Note
+  RKE:Rancher Kubernetes Engine

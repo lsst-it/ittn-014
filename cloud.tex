@@ -1,28 +1,23 @@
 \newpage
 \section{Cloud}
 \subsection{Google Cloud Platform}
-For details of Tucson infrastructure please visit <Link>
-\newpage
-\subsubsection{Google Cloud Platform}
 IT uses Google Cloud services to deploy development pods
+\begin{itemize}
+  \itemsep0em 
+  \item Name:      Cloud Core Cluster
+  \item Platform:  GKE
+  \item Multicast: No
+  \item Apps:      Graylog
+  \item Nodes:     3
+  \item CPU:       2
+  \item Memory:    22.5GB
+\end{itemize}
 \begin{center}
-  \begin{tabular}{ |c|c| } 
-   \hline
-   Platform: & Kubernetes \\ 
-   Multicast: & No \\ 
-   Apps: & Several development instances \\ 
-   Nodes: & 3 \\ 
-   Cpu: & 6 cores \\ 
-   Memory: & 22.5GB \\ 
-   \hline
-  \end{tabular}
-\end{center}
-
-\begin{center}
-  \begin{tabular}{||c c c c||} 
+  \small
+  \begin{tabular}{||c c c c||}
     \hline
-    Node & CPU & Memory & Network \\ [0.5ex] 
-    \hline\hline
+    Node & CPU & Memory & Network \\ [0.5ex]
+    \hline
     node1 & 2 & 5.9GB & 1x10GB \\
     \hline
     node2 & 2 & 5.9GB & 1x10GB \\

@@ -1,27 +1,24 @@
 \newpage
 \subsection{Cerro Pachon}
 For details of La Serena infrastructure please visit <Link>
-\newpage
+
 \subsubsection{Andes}
-
+\begin{itemize}
+  \itemsep0em 
+  \item Name:      Andes Cluster
+  \item Platform:  Kubernetes
+  \item Multicast: Yes
+  \item Apps:      RKE
+  \item Nodes:     16
+  \item CPU:       192
+  \item Memory:    1.4TB
+\end{itemize}
 \begin{center}
-  \begin{tabular}{ |c|c| } 
-   \hline
-   Platform: & Kubernetes \\ 
-   Multicast: & Yes \\ 
-   Apps: &  \\ 
-   Nodes: & 6 \\ 
-   Cpu: & 192 cores \\ 
-   Memory: & 1.4TB \\ 
-   \hline
-  \end{tabular}
-\end{center}
-
-\begin{center}
+  \small
   \begin{tabular}{||c c c c||} 
     \hline
-    Node & CPU & Memory & Network \\ [0.5ex] 
-    \hline\hline
+    Node & CPU & Memory & Network \\ [0.5ex]
+    \hline
     andes01.cp.lsst.org & 32 & 380GB & 2x10GB \\
     \hline
     andes02.cp.lsst.org & 32 & 383GB & 2x10GB \\
@@ -39,25 +36,21 @@ For details of La Serena infrastructure please visit <Link>
 
 \newpage
 \subsubsection{Amor}
-
+\begin{itemize}
+  \itemsep0em 
+  \item Name:      Amor Cluster
+  \item Multicast: Yes
+  \item Apps:      Docker
+  \item Nodes:     2
+  \item CPU:       32
+  \item Memory:    128GB
+\end{itemize}
 \begin{center}
-  \begin{tabular}{ |c|c| } 
-   \hline
-   Platform: &  \\ 
-   Multicast: & Yes \\ 
-   Apps: &  \\ 
-   Nodes: & 2 \\ 
-   Cpu: & 32 cores \\ 
-   Memory: & 128GB \\ 
-   \hline
-  \end{tabular}
-\end{center}
-
-\begin{center}
-  \begin{tabular}{||c c c c||} 
+  \small
+  \begin{tabular}{||c c c c||}
     \hline
-    Node & CPU & Memory & Network \\ [0.5ex] 
-    \hline\hline
+    Node & CPU & Memory & Network \\ [0.5ex]
+    \hline
     amor01.cp.lsst.org & 16 & 64GB & 2x10GB \\
     \hline
     amor02.cp.lsst.org & 16 & 64GB & 2x10GB \\
@@ -66,25 +59,21 @@ For details of La Serena infrastructure please visit <Link>
 \end{center}
 
 \subsubsection{Azar}
-
+\begin{itemize}
+  \itemsep0em 
+  \item Name:      Azar Cluster
+  \item Multicast: Yes
+  \item Apps:      Docker
+  \item Nodes:     2
+  \item CPU:       112
+  \item Memory:    768GB
+\end{itemize}
 \begin{center}
-  \begin{tabular}{ |c|c| } 
-   \hline
-   Platform: & Docker Hosts \\ 
-   Multicast: & Yes \\ 
-   Apps: &  \\ 
-   Nodes: & 2 \\ 
-   Cpu: & 112 cores \\ 
-   Memory: & 768GB \\ 
-   \hline
-  \end{tabular}
-\end{center}
-
-\begin{center}
-  \begin{tabular}{||c c c c||} 
+  \small
+  \begin{tabular}{||c c c c||}
     \hline
-    Node & CPU & Memory & Network \\ [0.5ex] 
-    \hline\hline
+    Node & CPU & Memory & Network \\ [0.5ex]
+    \hline
     azar1.cp.lsst.org & 56 & 384GB & 2x10GB \\
     \hline
     azar2.cp.lsst.org & 56 & 384GB & 2x10GB \\
@@ -93,31 +82,54 @@ For details of La Serena infrastructure please visit <Link>
 \end{center}
 
 \newpage
-\subsubsection{Core}
-
+\subsubsection{Core CP}
+\begin{itemize}
+  \itemsep0em 
+  \item Name:      Summit Core Cluster
+  \item Platform:  Libvirt
+  \item Multicast: No
+  \item Apps:      Foreman, DHCP, DNS
+  \item Nodes:     3
+  \item CPU:       96
+  \item Memory:    240GB
+\end{itemize}
 \begin{center}
-  \begin{tabular}{ |c|c| } 
-   \hline
-   Platform: & Libvirt \\ 
-   Multicast: & No \\ 
-   Apps: & DNS, DHCP, etc. \\ 
-   Nodes: & 3 \\ 
-   Cpu: & 96 cores \\ 
-   Memory: & 240GB \\ 
-   \hline
-  \end{tabular}
-\end{center}
-
-\begin{center}
-  \begin{tabular}{||c c c c||} 
+  \small
+  \begin{tabular}{||c c c c||}
     \hline
-    Node & CPU & Memory & Network \\ [0.5ex] 
-    \hline\hline
+    Node & CPU & Memory & Network \\ [0.5ex]
+    \hline
     core01.cp.lsst.org & 32 & 80GB & 2x10GB \\
     \hline
     core02.cp.lsst.org & 32 & 80GB & 2x10GB \\
     \hline
     core03.cp.lsst.org & 32 & 80GB & 2x10GB \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\subsubsection{Rancher CP}
+\begin{itemize}
+  \itemsep0em 
+  \item Name:      Rancher CP
+  \item Platform:  Kubernetes
+  \item Multicast: No
+  \item Apps:      Rancher WUI
+  \item Nodes:     3
+  \item CPU:       12
+  \item Memory:    24GB
+\end{itemize}
+\begin{center}
+  \small
+  \begin{tabular}{||c c c c c||}
+    \hline
+    Node & CPU & Memory & Network & Host \\ [0.5ex]
+    \hline
+    rancher01.cp.lsst.org & 4 & 8GB & 1x1GB & core1.cp.lsst.org \\
+    \hline
+    rancher02.cp.lsst.org & 4 & 8GB & 1x1GB & core2.cp.lsst.org \\
+    \hline
+    rancher03.cp.lsst.org & 4 & 8GB & 1x1GB & core3.cp.lsst.org \\
     \hline
   \end{tabular}
 \end{center}

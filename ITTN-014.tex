@@ -54,22 +54,17 @@ Vera Rubin Observatory has several locations with computing infrastructure. This
 \input{cerropachon.tex}
 \input{tucson.tex}
 \input{cloud.tex}
-\newpage
 \appendix
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
-%\section{References} \label{sec:bib}
-%\renewcommand{\refname}{} % Suppress default Bibliography section
-%\bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
+% \section{References} \label{sec:bib}
+\renewcommand{\refname}{} % Suppress default Bibliography section
+\bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
 
 % Make sure lsst-texmf/bin/generateAcronyms.py is in your path
+\newpage
 \section{Acronyms} \label{sec:acronyms}
 \input{acronyms.tex}
 % If you want glossary uncomment below -- comment out the two lines above
 %\printglossaries
-
-
-
-
-
 \end{document}

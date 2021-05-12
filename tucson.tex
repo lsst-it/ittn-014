@@ -1,54 +1,79 @@
 \newpage
 \section{United States}
+Tucson site is undergoing a rebuilding process, therefore the current information might not up to date.
 \subsection{Tucson Lab}
-For details of Tucson infrastructure please visit <Link>
-\newpage
-\subsubsection{Pillan}
-Multicast Test Kubernetes Cluster
-\begin{center}
-  \begin{tabular}{ |c|c| } 
-   \hline
-   Platform: & Kubernetes \\ 
-   Multicast: & Yes \\ 
-   Apps: &  \\ 
-   Nodes: & 1 \\ 
-   Cpu: & 40 cores \\ 
-   Memory: & 30GB \\ 
-   \hline
-  \end{tabular}
-\end{center}
 
+\subsubsection{Pillan}
+\begin{itemize}
+  \itemsep0em 
+  \item Name:      Pillan Cluster
+  \item Platform:  Kubernetes
+  \item Multicast: Yes
+  \item Apps:      RKE
+  \item Nodes:     1
+  \item CPU:       40
+  \item Memory:    30GB
+\end{itemize}
 \begin{center}
-  \begin{tabular}{||c c c c||} 
+  \small
+  \begin{tabular}{||c c c c||}
     \hline
-    Node & CPU & Memory & Network \\ [0.5ex] 
-    \hline\hline
+    Node & CPU & Memory & Network \\ [0.5ex]
+    \hline
     pillan01.tu.lsst.org & 40 & 30GB & 1x10GB \\
     \hline
   \end{tabular}
 \end{center}
 
-\subsubsection{Rancher Tucson}
-Tucson Rancher Platform
+\newpage
+\subsubsection{Rancher TU}
+  \begin{itemize}
+    \itemsep0em 
+    \item Name:      Rancher TU
+    \item Platform:  Kubernetes
+    \item Multicast: No
+    \item Apps:      Rancher WUI
+    \item Nodes:     3
+    \item CPU:       12
+    \item Memory:    24GB
+  \end{itemize}
 \begin{center}
-  \begin{tabular}{ |c|c| } 
-   \hline
-   Platform: & Kubernetes \\ 
-   Multicast: & Yes \\ 
-   VMBased: & Yes \\ 
-   Nodes: & 1 \\ 
-   Cpu: & 4 cores \\ 
-   Memory: & 6GB \\ 
-   \hline
+  \small
+  \begin{tabular}{||c c c c c||}
+    \hline
+    Node & CPU & Memory & Network & Host \\ [0.5ex]
+    \hline
+    rancher01.tu.lsst.org & 4 & 8GB & 1x1GB & core1.tu.lsst.org \\
+    \hline
+    rancher02.tu.lsst.org & 4 & 8GB & 1x1GB & core1.tu.lsst.org \\
+    \hline
+    rancher03.tu.lsst.org & 4 & 8GB & 1x1GB & core2.tu.lsst.org \\
+    \hline
   \end{tabular}
 \end{center}
 
+\subsubsection{Core TU}
+\begin{itemize}
+  \itemsep0em 
+  \item Name:      Tucson Core Cluster
+  \item Platform:  Libvirt
+  \item Multicast: No
+  \item Apps:      Foreman, DHCP, DNS
+  \item Nodes:     3
+  \item CPU:       96
+  \item Memory:    240GB
+\end{itemize}
 \begin{center}
-  \begin{tabular}{||c c c c c||} 
+  \small
+  \begin{tabular}{||c c c c||}
     \hline
-    Node & CPU & Memory & Network & Host \\ [0.5ex] 
-    \hline\hline
-    rancher01.tu.lsst.org & 4 & 6GB & 1x1GB & core2.tuc.lsst.cloud \\
+    Node & CPU & Memory & Network \\ [0.5ex]
+    \hline
+    core1.tu.lsst.org & 32 & 80GB & 2x10GB \\
+    \hline
+    core2.tu.lsst.org & 32 & 80GB & 2x10GB \\
+    \hline
+    core3.tu.lsst.org & 32 & 80GB & 2x10GB \\
     \hline
   \end{tabular}
 \end{center}
