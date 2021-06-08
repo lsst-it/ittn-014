@@ -1,7 +1,11 @@
-# List acronyms in this file that are not found in lsst-texmf, or that have multiple definitions (put the one you want here).
-#
-# Line format:
-#   ACRONYM:Definition
-#
-# Example:
-#   MIA:Missing In Action
+  GCP:Google Cloud Platform
+  GKE:Google Kubernetes Engine
+  LS:La Serena
+  CP:Cerro Pachon
+  TU:Tucson
+  DHCP:Dynamic Host Configuration Protocol
+  DNS:Domain Name System
+  RST:reStructuredTex
+  WUI:Web User Interface
+  ITTN:IT Technical Note
+  RKE:Rancher Kubernetes Engine

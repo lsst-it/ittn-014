@@ -1,0 +1,133 @@
+\newpage
+\subsection{Cerro Pachon}
+\subsubsection{Andes}
+\begin{itemize}
+  \itemsep0em 
+  \item \textbf{Name:}       Andes Cluster
+  \item \textbf{Platform:}   Kubernetes
+  \item \textbf{Multicast:}  Yes
+  \item \textbf{Apps:}       RKE
+  \item \textbf{Nodes:}      16
+  \item \textbf{CPU:}        192
+  \item \textbf{RAM Memory:} 1.3TB
+\end{itemize}
+\begin{center}
+  \small
+  \begin{tabular}{||c c c c||} 
+    \hline
+    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} \\ [0.5ex]
+    \hline
+    andes01.cp.lsst.org & 32 & 376GB & 2x10GB \\
+    \hline
+    andes02.cp.lsst.org & 32 & 376GB & 2x10GB \\
+    \hline
+    andes03.cp.lsst.org & 32 & 345GB & 2x10GB \\
+    \hline
+    andes04.cp.lsst.org & 32 & 77GB & 2x10GB \\
+    \hline
+    andes05.cp.lsst.org & 32 & 77GB & 2x10GB \\
+    \hline
+    andes06.cp.lsst.org & 32 & 77GB & 2x10GB \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\newpage
+\subsubsection{Amor}
+\begin{itemize}
+  \itemsep0em 
+  \item \textbf{Name:}       Amor Cluster
+  \item \textbf{Multicast:}  Yes
+  \item \textbf{Apps:}       Docker
+  \item \textbf{Nodes:}      2
+  \item \textbf{CPU:}        32
+  \item \textbf{RAM Memory:} 124GB
+\end{itemize}
+\begin{center}
+  \small
+  \begin{tabular}{||c c c c||}
+    \hline
+    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} \\ [0.5ex]
+    \hline
+    amor01.cp.lsst.org & 16 & 62GB & 2x10GB \\
+    \hline
+    amor02.cp.lsst.org & 16 & 62GB & 2x10GB \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\subsubsection{Azar}
+\begin{itemize}
+  \itemsep0em 
+  \item \textbf{Name:}       Azar Cluster
+  \item \textbf{Multicast:}  Yes
+  \item \textbf{Apps:}       Docker
+  \item \textbf{Nodes:}      2
+  \item \textbf{CPU:}        112
+  \item \textbf{RAM Memory:} 752GB
+\end{itemize}
+\begin{center}
+  \small
+  \begin{tabular}{||c c c c||}
+    \hline
+    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} \\ [0.5ex]
+    \hline
+    azar1.cp.lsst.org & 56 & 376GB & 2x10GB \\
+    \hline
+    azar2.cp.lsst.org & 56 & 376GB & 2x10GB \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\newpage
+\subsubsection{Core CP}
+\begin{itemize}
+  \itemsep0em 
+  \item \textbf{Name:}       Summit Core Cluster
+  \item \textbf{Platform:}   Libvirt
+  \item \textbf{Multicast:}  No
+  \item \textbf{Apps:}       Foreman, DHCP, DNS
+  \item \textbf{Nodes:}      3
+  \item \textbf{CPU:}        96
+  \item \textbf{RAM Memory:} 231GB
+\end{itemize}
+\begin{center}
+  \small
+  \begin{tabular}{||c c c c||}
+    \hline
+    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} \\ [0.5ex]
+    \hline
+    core01.cp.lsst.org & 32 & 77GB & 2x10GB \\
+    \hline
+    core02.cp.lsst.org & 32 & 77GB & 2x10GB \\
+    \hline
+    core03.cp.lsst.org & 32 & 77GB & 2x10GB \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\subsubsection{Rancher CP}
+\begin{itemize}
+  \itemsep0em 
+  \item \textbf{Name:}       Rancher CP
+  \item \textbf{Platform:}   Kubernetes
+  \item \textbf{Multicast:}  No
+  \item \textbf{Apps:}       Rancher WUI
+  \item \textbf{Nodes:}      3
+  \item \textbf{CPU:}        12
+  \item \textbf{RAM Memory:} 21GB
+\end{itemize}
+\begin{center}
+  \small
+  \begin{tabular}{||c c c c c||}
+    \hline
+    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{Host} \\ [0.5ex]
+    \hline
+    rancher01.cp.lsst.org & 4 & 7GB & 1x1GB & core1.cp.lsst.org \\
+    \hline
+    rancher02.cp.lsst.org & 4 & 7GB & 1x1GB & core2.cp.lsst.org \\
+    \hline
+    rancher03.cp.lsst.org & 4 & 7GB & 1x1GB & core3.cp.lsst.org \\
+    \hline
+  \end{tabular}
+\end{center}
