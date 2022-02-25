@@ -1,55 +1,49 @@
 \section{Chile}
 \subsection{La Serena}
-For details of La Serena infrastructure please visit https://confluence.lsstcorp.org/x/4APMBw
-
-\newpage
 \subsubsection{Antu}
 \begin{itemize}
   \itemsep0em 
   \item \textbf{Name:}      Commissioning Cluster
   \item \textbf{Platform:}  Kubernetes
   \item \textbf{Multicast:} Yes
-  \item \textbf{Apps:}      Nublado
+  \item \textbf{Apps:}      RKE, Nublado
   \item \textbf{Nodes:}     15
   \item \textbf{CPU:}       832
   \item \textbf{Memory:}    3.2TB
   \item \textbf{Usable Storage:}   26TB
 \end{itemize}
+\vspace*{0.1mm}
 \begin{center}
   \small
-  \begin{tabular}{||c c c c c||}
+  \begin{tabular}{||c c c c c c c||}
     \hline
-    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{Disk Storage} \\ [0.5ex]
+    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{System Storage} & \textbf{Docker Storage} & \textbf{Data Storage} \\ [0.5ex]
     \hline
-    antu01.ls.lsst.org & 72 & 376GB & 2x10GB & 10.25TB \\
+    antu01.ls.lsst.org & 72 & 376GB & 2x10GB & 1.1TB & 447GB & 8.7TB \\
     \hline
-    antu02.ls.lsst.org & 72 & 376GB & 2x10GB & 10.25TB \\
+    antu02.ls.lsst.org & 72 & 376GB & 2x10GB & 1.1TB & 447GB & 8.7TB \\
     \hline
-    antu03.ls.lsst.org & 72 & 376GB & 2x10GB & 10.25TB \\
+    antu03.ls.lsst.org & 72 & 376GB & 2x10GB & 1.1TB & 447GB & 8.7TB \\
     \hline
-    antu04.ls.lsst.org & 64 & 187GB & 2x10GB & 2.25TB \\
+    antu04.ls.lsst.org & 64 & 187GB & 2x10GB & 447GB & 1.8TB & N/A \\
     \hline
-    antu05.ls.lsst.org & 64 & 187GB & 2x10GB & 2.25TB \\
+    antu05.ls.lsst.org & 64 & 187GB & 2x10GB & 447GB & 1.8TB & N/A \\
     \hline
-    antu06.ls.lsst.org & 64 & 187GB & 2x10GB & XTB \\
+    antu06.ls.lsst.org & 64 & 187GB & 2x10GB & 447GB & 1.8TB & N/A \\
     \hline
-    antu07.ls.lsst.org & 64 & 187GB & 2x10GB & 2.25TB \\
+    antu07.ls.lsst.org & 64 & 187GB & 2x10GB & 447GB & 1.8TB & N/A \\
     \hline
-    antu08.ls.lsst.org & 64 & 187GB & 2x10GB & 2.25TB \\
+    antu08.ls.lsst.org & 64 & 187GB & 2x10GB & 447GB & 1.8TB & N/A \\
     \hline
-    antu09.ls.lsst.org & 64 & 187GB & 2x10GB & 2.25TB \\
+    antu09.ls.lsst.org & 64 & 187GB & 2x10GB & 447GB & 1.8TB & N/A \\
     \hline
-    ls-dtn01.ls.lsst.org & 48 & 187GB & 2x10GB & 32.3TB \\
+    ls-dtn01.ls.lsst.org & 48 & 187GB & 2x10GB & 32.3TB & 223.5GB & N/A \\
     \hline
-    ls-dtn02.ls.lsst.org & 48 & 187GB & 2x10GB & 32.3TB \\
+    ls-dtn02.ls.lsst.org & 48 & 187GB & 2x10GB & 32.3TB & 223.5GB & N/A \\
     \hline
-    ls-efdetl01.ls.lsst.org & 40 & 187GB & 2x10GB & 6TB \\
+    ls-efdetl01.ls.lsst.org & 40 & 187GB & 2x10GB & 5.8TB & 223.5 & N/A \\
     \hline
-    ls-fwrd01.ls.lsst.org & 48 & 92GB & 2x10GB & XTB \\
-    \hline
-    ls-handoff01.ls.lsst.org & 24 & 187GB & 2x10GB & XTB \\
-    \hline
-    ls-handoff02.ls.lsst.org & 24 & 187GB & 2x10GB & XTB \\
+    ls-fwdr02.ls.lsst.org & 48 & 92GB & 2x10GB & 50GB & 221.8GB & N/A \\
     \hline
   \end{tabular}
 \end{center}
@@ -59,7 +53,7 @@ For details of La Serena infrastructure please visit https://confluence.lsstcorp
 \begin{itemize}
   \itemsep0em 
   \item \textbf{Name:}      IT Services
-  \item \textbf{Platform:}        Libvirt
+  \item \textbf{Platform:}  Libvirt
   \item \textbf{Multicast:}  No
   \item \textbf{Apps:}       Foreman, DHCP and DNS
   \item \textbf{Nodes:}      3
@@ -70,7 +64,7 @@ For details of La Serena infrastructure please visit https://confluence.lsstcorp
   \small
   \begin{tabular}{||c c c c c||} 
     \hline
-    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{Disk Storage} \\ [0.5ex]
+    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{System Storage} \\ [0.5ex]
     \hline
     core01.ls.lsst.org & 32 & 77GB & 2x1GB & 500GB \\
     \hline
@@ -81,113 +75,98 @@ For details of La Serena infrastructure please visit https://confluence.lsstcorp
   \end{tabular}
 \end{center}
 
-\subsubsection{Core Dev}
+\subsubsection{Luan}
 \begin{itemize}
   \itemsep0em 
-  \item \textbf{Name:}       IT Development
-  \item \textbf{Platform:}   Libvirt
+  \item \textbf{Name:}       IT Production Kubernetes Cluster
+  \item \textbf{Platform:}   Kubernetes
   \item \textbf{Multicast:}  No
-  \item \textbf{Apps:}       Foreman, DHCP and DNS
-  \item \textbf{Nodes:}      2
-  \item \textbf{CPU:}        36
-  \item \textbf{RAM Memory:} 96GB
+  \item \textbf{Apps:}       RKE
+  \item \textbf{Nodes:}      5
+  \item \textbf{CPU:}        160
+  \item \textbf{RAM Memory:} 1280GB
+  \item \textbf{Usable Storage:} 36TB
 \end{itemize}
 \begin{center}
   \small
-  \begin{tabular}{||c c c c c||}
+  \begin{tabular}{||c c c c c c||}
     \hline
-    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{Disk Storage} \\ [0.5ex]
+    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{System Storage} & \textbf{Docker Storage} \\ [0.5ex]
     \hline
-    core1.dev.lsst.org & 32 & 80GB & 1x1GB & 500GB \\
+    luan01.ls.lsst.org & 32 & 256GB & 2x10GB & 500GB & 500GB \\
     \hline
-    core2.dev.lsst.org & 04 & 16GB & 1x1GB & 872GB \\
+    luan02.ls.lsst.org & 32 & 256GB & 2x10GB & 500GB & 500GB \\
+    \hline
+    luan03.ls.lsst.org & 32 & 256GB & 2x10GB & 500GB & 500GB \\
+    \hline
+    luan04.ls.lsst.org & 32 & 256GB & 2x10GB & 500GB & 500GB \\
+    \hline
+    luan05.ls.lsst.org & 32 & 256GB & 2x10GB & 500GB & 500GB \\
     \hline
   \end{tabular}
 \end{center}
 
 \newpage
 \subsubsection{Kueyen}
+\vspace*{0.1mm}
 \begin{itemize}
   \itemsep0em 
   \item \textbf{Name:}       Kueyen Cluster
   \item \textbf{Platform:}   Kubernetes
   \item \textbf{Multicast:}  Yes
   \item \textbf{Apps:}       CSC and EFD
-  \item \textbf{Nodes:}      4
-  \item \textbf{CPU:}        128
-  \item \textbf{RAM Memory:} 312GB
-  \item \textbf{Usable Storage:}   18TB
-\end{itemize}
-\begin{center}
-  \small
-  \begin{tabular}{||c c c c c||}
-    \hline
-    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{Disk Storage} \\ [0.5ex]
-    \hline
-    kueyen01.ls.lsst.org & 32 & 77GB & 2x10GB & XTB \\
-    \hline
-    kueyen02.ls.lsst.org & 32 & 77GB & 2x10GB & 15.6TB \\
-    \hline
-    kueyen03.ls.lsst.org & 32 & 77GB & 2x10GB & 12TB \\
-    \hline
-    kueyen04.ls.lsst.org & 32 & 77GB & 2x10GB & 15.6TB \\
-    \hline
-  \end{tabular}
-\end{center}
-
-\subsubsection{Oracle}
-\begin{itemize}
-  \itemsep0em 
-  \item \textbf{Name:}       Oracle Nodes
-  \item \textbf{Apps:}       Oracle
-  \item \textbf{Nodes:}      2
+  \item \textbf{Nodes:}      3
   \item \textbf{CPU:}        96
-  \item \textbf{RAM Memory:} 374GB
-  \item \textbf{Usable Storage:}   X.XTB
+  \item \textbf{RAM Memory:} 231GB
+  \item \textbf{Usable Storage:} 29TB
 \end{itemize}
 \begin{center}
   \small
-  \begin{tabular}{||c c c c c||} 
+  \begin{tabular}{||c c c c c c c||}
     \hline
-    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{Disk Storage} \\ [0.5ex] 
+    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{System Storage} & \textbf{Docker Storage} & \textbf{Data Storage} \\ [0.5ex]
     \hline
-    oradb01.ls.lsst.org & 48 & 187GB & 2x10GB & XTB \\
+    kueyen02.ls.lsst.org & 32 & 77GB & 2x10GB & 3.7TB & 631.5GB & 10.9TB \\
     \hline
-    oradb02.ls.lsst.org & 48 & 187GB & 2x10GB & XTB \\
+    kueyen03.ls.lsst.org & 32 & 77GB & 2x10GB & 3.7TB & 631.5GB & 7.3TB \\
+    \hline
+    kueyen04.ls.lsst.org & 32 & 77GB & 2x10GB & 3.7TB & 631.5GB & 10.9TB\\
     \hline
   \end{tabular}
 \end{center}
-
+\vspace*{0.1mm}
 \newpage
 \subsubsection{Ruka}
+\vspace*{0.1mm}
 \begin{itemize}
   \itemsep0em 
-  \item \textbf{Name:}       Ruka Cluster
+  \item \textbf{Name:}       IT Development Kubernetes Cluster
   \item \textbf{Platform:}   Kubernetes
   \item \textbf{Multicast:}  No
   \item \textbf{Apps:}       RKE
   \item \textbf{Nodes:}      6
   \item \textbf{CPU:}        256
-  \item \textbf{RAM Memory:} 610GB
-  \item \textbf{Usable Storage:}   11TB
+  \item \textbf{RAM Memory:} 606GB
+  \item \textbf{Usable Storage:}  9.1TB
 \end{itemize}
+\vspace*{0.01mm}
 \begin{center}
   \small
-  \begin{tabular}{||c c c c c||}
+  \begin{tabular}{||c c c c c c||}
     \hline
-    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{Disk Storage} \\ [0.5ex]
+    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{System Storage} & \textbf{Docker Storage}\\ [0.5ex]
     \hline
-    ruka01.ls.lsst.org & 32 & 78GB & 2x10GB & 6.2TB \\
+    ruka01.dev.lsst.org & 32 & 77GB & 2x10GB & 2TB & 1TB \\
     \hline
-    ruka02.ls.lsst.org & 32 & 78GB & 2x10GB & 4.7TB \\
+    ruka02.dev.lsst.org & 32 & 77GB & 2x10GB & 2TB & 1TB \\
     \hline
-    ruka03.ls.lsst.org & 32 & 78GB & 2x10GB & 3.6TB \\
+    ruka03.dev.lsst.org & 32 & 77GB & 2x10GB & 2TB & 1TB \\
     \hline
-    ruka04.ls.lsst.org & 32 & 125GB & 2x10GB & 4.8TB \\
+    ruka04.dev.lsst.org & 32 & 125GB & 2x10GB & 2TB & 1TB \\
     \hline
-    ruka05.ls.lsst.org & 32 & 125GB & 2x10GB & 3.6TB \\
+    ruka05.dev.lsst.org & 32 & 125GB & 2x10GB & 2TB & 1TB \\
     \hline
-    ruka06.ls.lsst.org & 32 & 125GB & 2x10GB & 4.4TB \\
+    ruka06.dev.lsst.org & 32 & 125GB & 2x10GB & 2TB & 1TB \\
     \hline
   \end{tabular}
 \end{center}
@@ -209,7 +188,7 @@ For details of La Serena infrastructure please visit https://confluence.lsstcorp
   \small
   \begin{tabular}{||c c c c c c||}
     \hline
-    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{Host} & \textbf{Disk Storage} \\ [0.5ex]
+    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{Host} & \textbf{System Storage} \\ [0.5ex]
     \hline
     rancher01.ls.lsst.org & 4 & 7GB & 1x1GB & core01.ls.lsst.org & 40GB \\
     \hline
