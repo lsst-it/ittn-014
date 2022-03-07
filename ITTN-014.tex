@@ -29,7 +29,14 @@ Ivan Gonzalez
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-The Vera Rubin Observatory Computer Infrastructure is formed by four sites: La Serena, Cerro Pachon, Tucson and Cloud, each organized in different clusters. This document details the Cluster's amount of Nodes, Processing Capacity (CPU), Network Interfaces Information and Memory (RAM) Infrastructure per site.
+The Vera Rubin Observatory Computer Infrastructure is formed by four sites: La Serena, Cerro Pachon, Tucson and Cloud, each composed of several server's clusters. This document details each Cluster's amount of Nodes, Processing Capacity (CPU), Network Interfaces Information and Memory (RAM) Infrastructure per site.
+\linebreak\linebreak The Physical Storage information from each cluster will be devided into three:
+\begin{itemize}
+  \itemsep0em 
+  \item \textbf{System Storage:} Represents the Disk Storage capacity that the OS has control of - /, /etc, /usr, /lib, /home, /var, /root, /opt-.
+  \item \textbf{Data Storage:} Disk unit space dedicated for data storage or common pool contribution.
+  \item \textbf{Docker Storage:} Storage Unit dedicated for running docker images - /var/lib/docker/-.
+\end{itemize}
 }
 
 % Change history defined here.
