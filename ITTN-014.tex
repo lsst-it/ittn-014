@@ -36,6 +36,7 @@ The Vera Rubin Observatory Computer Infrastructure is formed by four sites: La S
   \item \textbf{System Storage:} Represents the Disk Storage capacity that the OS has control of - /, /etc, /usr, /lib, /home, /var, /root, /opt-.
   \item \textbf{Data Storage:} Disk unit space dedicated for data storage or common pool contribution.
   \item \textbf{Docker Storage:} Storage Unit dedicated for running docker images - /var/lib/docker/-.
+  \item \textbf{Usable Kubernetes Storage}: All Rubin Clusters are provisioned with rook-ceph. Rook orchestrates ceph storage between the distributed nodes, allowing self-managing, self-scaling, and self healing storage services. The Usable Kubernetes Storage is then the total amount of usable space for the PV's (over kubernetes).
 \end{itemize}
 }
 
