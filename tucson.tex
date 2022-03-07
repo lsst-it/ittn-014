@@ -4,32 +4,40 @@
 Tucson site is undergoing a rebuilding process, therefore information may not be up to date.
 \subsection{Tucson Lab}
 \subsubsection{Pillan}
-\vspace*{-\baselineskip}
 \begin{itemize}
   \itemsep0em 
-  \item \textbf{Name:}       Pillan Cluster
+  \item \textbf{Name:}       IT Production Kubernetes Cluster
   \item \textbf{Platform:}   Kubernetes
   \item \textbf{Multicast:}  Yes
   \item \textbf{Apps:}       RKE
-  \item \textbf{Nodes:}      1
-  \item \textbf{CPU:}        40
-  \item \textbf{RAM Memory:} 30GB
-  \item \textbf{Usable Storage:} 4TB
+  \item \textbf{Nodes:}      6
+  \item \textbf{CPU:}        384
+  \item \textbf{RAM Memory:} 1.536GB
+  \item \textbf{Usable Kubernetes Storage:} 21TB
 \end{itemize}
-\vspace*{-\baselineskip}
 \begin{center}
   \small
-  \begin{tabular}{||c c c c c||}
+  \begin{tabular}{||c c c c c c c||} 
     \hline
-    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{Disk Storage} \\ [0.5ex]
+    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{System Storage} & \textbf{Docker Storage} & \textbf{Data Storage} \\ [0.5ex]
     \hline
-    pillan01.tu.lsst.org & 40 & 30GB & 1x10GB & 4TB \\
+    pillan01.cp.lsst.org & 64 & 256GB & 2x10GB & 465.8GB & 1.8TB & 7.4TB \\
+    \hline
+    pillan02.cp.lsst.org & 64 & 256GB & 2x10GB & 465.8GB & 1.8TB & 7.4TB \\
+    \hline
+    pillan03.cp.lsst.org & 64 & 256GB & 2x10GB & 465.8GB & 1.8TB & 7.4TB \\
+    \hline
+    pillan04.cp.lsst.org & 64 & 256GB & 2x10GB & 465.8GB & 1.8TB & 7.4TB \\
+    \hline
+    pillan05.cp.lsst.org & 64 & 256GB & 2x10GB & 465.8GB & 1.8TB & 7.4TB \\
+    \hline
+    pillan06.cp.lsst.org & 64 & 256GB & 2x10GB & 465.8GB & 1.8TB & 7.4TB \\
     \hline
   \end{tabular}
 \end{center}
-\vspace*{-\baselineskip}
+
+\newpage
 \subsubsection{Core TU}
-\vspace*{-\baselineskip}
 \begin{itemize}
   \itemsep0em 
   \item \textbf{Name:}       Tucson Core Cluster
@@ -41,18 +49,17 @@ Tucson site is undergoing a rebuilding process, therefore information may not be
   \item \textbf{RAM Memory:} 231GB
   \item \textbf{Usable Storage:} X.XTB
 \end{itemize}
-\vspace*{-\baselineskip}
 \begin{center}
   \small
-  \begin{tabular}{||c c c c c||}
+  \begin{tabular}{||c c c c c c||}
     \hline
-    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{Disk Storage} \\ [0.5ex]
+    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{System Storage} & \textbf{VM Storage} \\ [0.5ex]
     \hline
-    core1.tu.lsst.org & 32 & 77GB & 2x10GB & XTB \\
+    core1.tu.lsst.org & 32 & 77GB & 2x10GB & 931GB & 10.9TB + 477GB \\
     \hline
-    core2.tu.lsst.org & 32 & 77GB & 2x10GB & XTB \\
+    core2.tu.lsst.org & 32 & 77GB & 2x10GB & 931GB & 500GB \\
     \hline
-    core3.tu.lsst.org & 32 & 77GB & 2x10GB & XTB \\
+    core3.tu.lsst.org & 32 & 77GB & 2x10GB & 931GB & 500GB \\
     \hline
   \end{tabular}
 \end{center}

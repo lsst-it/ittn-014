@@ -1,4 +1,5 @@
 \documentclass[PMO,authoryear,toc]{lsstdoc}
+\usepackage{ragged2e}
 % lsstdoc documentation: https://lsst-texmf.lsst.io/lsstdoc.html
 %\input{meta}
 
@@ -28,7 +29,15 @@ Ivan Gonzalez
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-The Vera Rubin Observatory Computer Infrastructure is formed by four sites: La Serena, Cerro Pachon, Tucson and Cloud, each organized in different clusters. This document details the Cluster's amount of Nodes, Processing Capacity (CPU), Network Interfaces Information and Memory (RAM) Infrastructure per site.
+The Vera Rubin Observatory Computer Infrastructure is formed by four sites: La Serena, Cerro Pachon, Tucson and Cloud, each composed of several server's clusters. This document details each Cluster's amount of Nodes, Processing Capacity (CPU), Network Interfaces Information and Memory (RAM) Infrastructure per site.
+\linebreak\linebreak The Physical Storage information from each cluster will be devided into three:
+\begin{itemize}
+  \itemsep0em 
+  \item \textbf{System Storage:} Represents the Disk Storage capacity that the OS has control of - /, /etc, /usr, /lib, /home, /var, /root, /opt-.
+  \item \textbf{Data Storage:} Disk unit space dedicated for data storage or common pool contribution.
+  \item \textbf{Docker Storage:} Storage Unit dedicated for running docker images - /var/lib/docker/-.
+  \item \textbf{Usable Kubernetes Storage}: All Rubin Clusters are provisioned with rook-ceph. Rook orchestrates ceph storage between the distributed nodes, allowing self-managing, self-scaling, and self healing storage services. The Usable Kubernetes Storage is then the total amount of usable space for the PV's (over kubernetes).
+\end{itemize}
 }
 
 % Change history defined here.
@@ -42,6 +51,7 @@ The Vera Rubin Observatory Computer Infrastructure is formed by four sites: La S
   \addtohist{4}{2021-09-23}{Disk Storage added}{Ivan Gonzalez}
   \addtohist{5}{2021-10-18}{Corrections to Disk Storage Information}{Ivan Gonzalez}
   \addtohist{6}{2021-11-22}{Yagan Cluster Added}{Ivan Gonzalez}
+  \addtohist{7}{2022-02-25}{General Update and add Luan Cluster}{Heinrich Reinking}
 }
 
 
@@ -61,7 +71,6 @@ The Vera Rubin Observatory Computer Infrastructure is formed by four sites: La S
 \appendix
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
-% \section{References} \label{sec:bib}
 \renewcommand{\refname}{} % Suppress default Bibliography section
 \bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
 
@@ -71,4 +80,5 @@ The Vera Rubin Observatory Computer Infrastructure is formed by four sites: La S
 \input{acronyms.tex}
 % If you want glossary uncomment below -- comment out the two lines above
 %\printglossaries
+
 \end{document}
