@@ -1,54 +1,25 @@
 \section{Chile}
 \subsection{La Serena}
-\subsubsection{Antu}
+\subsubsection{Manke}
 \begin{itemize}
   \itemsep0em 
-  \item \textbf{Name:}      Commissioning Cluster
+  \item \textbf{Name:}      Base Test Stand (BTS)
   \item \textbf{Platform:}  Kubernetes
   \item \textbf{Multicast:} Yes
-  \item \textbf{Apps:}      RKE, Nublado
-  \item \textbf{Nodes:}     15
-  \item \textbf{CPU:}       832
-  \item \textbf{Memory:}    3.2TB
-  \item \textbf{Usable Storage:}   26TB
+  \item \textbf{Apps:}      Nublado, Telescope Control System
+  \item \textbf{System Details:} \href{https://rancher.ls.lsst.org}{Rancher LS}  
 \end{itemize}
-\vspace*{0.1mm}
-\begin{center}
-  \small
-  \begin{tabular}{||c c c c c c c||}
-    \hline
-    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{System Storage} & \textbf{Docker Storage} & \textbf{Data Storage} \\ [0.5ex]
-    \hline
-    antu01.ls.lsst.org & 72 & 376GB & 2x10GB & 1.1TB & 447GB & 8.7TB \\
-    \hline
-    antu02.ls.lsst.org & 72 & 376GB & 2x10GB & 1.1TB & 447GB & 8.7TB \\
-    \hline
-    antu03.ls.lsst.org & 72 & 376GB & 2x10GB & 1.1TB & 447GB & 8.7TB \\
-    \hline
-    antu04.ls.lsst.org & 64 & 187GB & 2x10GB & 447GB & 1.8TB & N/A \\
-    \hline
-    antu05.ls.lsst.org & 64 & 187GB & 2x10GB & 447GB & 1.8TB & N/A \\
-    \hline
-    antu06.ls.lsst.org & 64 & 187GB & 2x10GB & 447GB & 1.8TB & N/A \\
-    \hline
-    antu07.ls.lsst.org & 64 & 187GB & 2x10GB & 447GB & 1.8TB & N/A \\
-    \hline
-    antu08.ls.lsst.org & 64 & 187GB & 2x10GB & 447GB & 1.8TB & N/A \\
-    \hline
-    antu09.ls.lsst.org & 64 & 187GB & 2x10GB & 447GB & 1.8TB & N/A \\
-    \hline
-    ls-dtn01.ls.lsst.org & 48 & 187GB & 2x10GB & 32.3TB & 223.5GB & N/A \\
-    \hline
-    ls-dtn02.ls.lsst.org & 48 & 187GB & 2x10GB & 32.3TB & 223.5GB & N/A \\
-    \hline
-    ls-efdetl01.ls.lsst.org & 40 & 187GB & 2x10GB & 5.8TB & 223.5 & N/A \\
-    \hline
-    ls-fwdr02.ls.lsst.org & 48 & 92GB & 2x10GB & 50GB & 221.8GB & N/A \\
-    \hline
-  \end{tabular}
-\end{center}
 
-\newpage
+\subsubsection{KonKong}
+\begin{itemize}
+  \itemsep0em 
+  \item \textbf{Name:}      Base Test Stand S3 (BTS)
+  \item \textbf{Platform:}  Kubernetes
+  \item \textbf{Multicast:} Yes
+  \item \textbf{Apps:}      Rook
+  \item \textbf{System Details:} \href{https://rancher.ls.lsst.org}{Rancher LS}  
+\end{itemize}
+
 \subsubsection{Core LS}
 \begin{itemize}
   \itemsep0em 
@@ -78,154 +49,63 @@
 \subsubsection{Luan}
 \begin{itemize}
   \itemsep0em 
-  \item \textbf{Name:}       IT Production Kubernetes Cluster
+  \item \textbf{Name:}       IT Monitoring
   \item \textbf{Platform:}   Kubernetes
   \item \textbf{Multicast:}  No
-  \item \textbf{Apps:}       RKE
-  \item \textbf{Nodes:}      5
-  \item \textbf{CPU:}        160
-  \item \textbf{RAM Memory:} 1280GB
-  \item \textbf{Usable Kubernetes Storage:} 36TB
+  \item \textbf{Apps:}       Grafana, Telegraf
+  \item \textbf{System Details:} \href{https://rancher.ls.lsst.org}{Rancher LS}
+
 \end{itemize}
-\begin{center}
-  \small
-  \begin{tabular}{||c c c c c c||}
-    \hline
-    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{System Storage} & \textbf{Docker Storage} \\ [0.5ex]
-    \hline
-    luan01.ls.lsst.org & 32 & 256GB & 2x10GB & 500GB & 500GB \\
-    \hline
-    luan02.ls.lsst.org & 32 & 256GB & 2x10GB & 500GB & 500GB \\
-    \hline
-    luan03.ls.lsst.org & 32 & 256GB & 2x10GB & 500GB & 500GB \\
-    \hline
-    luan04.ls.lsst.org & 32 & 256GB & 2x10GB & 500GB & 500GB \\
-    \hline
-    luan05.ls.lsst.org & 32 & 256GB & 2x10GB & 500GB & 500GB \\
-    \hline
-  \end{tabular}
-\end{center}
 
 \subsubsection{Gaw}
 \begin{itemize}
   \itemsep0em 
-  \item \textbf{Name:}       IT Kubernetes Cluster - Base Backup
+  \item \textbf{Name:}       IT Base S3
   \item \textbf{Platform:}   Kubernetes, NFS/CephFS
   \item \textbf{Multicast:}  No
-  \item \textbf{Apps:}       RKE
-  \item \textbf{Nodes:}      5
-  \item \textbf{CPU:}        160
-  \item \textbf{RAM Memory:} 1280GB
-  \item \textbf{Usable Kubernetes Storage:} 364TB
-\end{itemize}
-\begin{center}
-  \small
-  \begin{tabular}{||c c c c c c||}
-    \hline
-    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{System Storage} & \textbf{Docker Storage} \\ [0.5ex]
-    \hline
-    gaw01.ls.lsst.org & 32 & 256GB & 2x10GB & 500GB & 500GB \\
-    \hline
-    gaw02.ls.lsst.org & 32 & 256GB & 2x10GB & 500GB & 500GB \\
-    \hline
-    gaw03.ls.lsst.org & 32 & 256GB & 2x10GB & 500GB & 500GB \\
-    \hline
-    gaw04.ls.lsst.org & 32 & 256GB & 2x10GB & 500GB & 500GB \\
-    \hline
-    gaw05.ls.lsst.org & 32 & 256GB & 2x10GB & 500GB & 500GB \\
-    \hline
-  \end{tabular}
-\end{center}
+  \item \textbf{Apps:}       Rook
+  \item \textbf{System Details:} \href{https://rancher.ls.lsst.org}{Rancher LS}
 
-\newpage
-\subsubsection{Kueyen}
-\vspace*{0.1mm}
-\begin{itemize}
-  \itemsep0em 
-  \item \textbf{Name:}       Kueyen Cluster
-  \item \textbf{Platform:}   Kubernetes
-  \item \textbf{Multicast:}  Yes
-  \item \textbf{Apps:}       CSC and EFD
-  \item \textbf{Nodes:}      3
-  \item \textbf{CPU:}        96
-  \item \textbf{RAM Memory:} 231GB
-  \item \textbf{Usable Kubernetes Storage:} 29TB
 \end{itemize}
-\begin{center}
-  \small
-  \begin{tabular}{||c c c c c c c||}
-    \hline
-    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{System Storage} & \textbf{Docker Storage} & \textbf{Data Storage} \\ [0.5ex]
-    \hline
-    kueyen02.ls.lsst.org & 32 & 77GB & 2x10GB & 3.7TB & 631.5GB & 10.9TB \\
-    \hline
-    kueyen03.ls.lsst.org & 32 & 77GB & 2x10GB & 3.7TB & 631.5GB & 7.3TB \\
-    \hline
-    kueyen04.ls.lsst.org & 32 & 77GB & 2x10GB & 3.7TB & 631.5GB & 10.9TB\\
-    \hline
-  \end{tabular}
-\end{center}
-\vspace*{0.1mm}
-\newpage
+
 \subsubsection{Ruka}
-\vspace*{0.1mm}
 \begin{itemize}
   \itemsep0em 
   \item \textbf{Name:}       IT Development Kubernetes Cluster
   \item \textbf{Platform:}   Kubernetes
   \item \textbf{Multicast:}  No
-  \item \textbf{Apps:}       RKE
-  \item \textbf{Nodes:}      6
-  \item \textbf{CPU:}        192
-  \item \textbf{RAM Memory:} 606GB
-  \item \textbf{Usable Kubernetes Storage:}  9.1TB
+  \item \textbf{Apps:}       Several Dev. Instances
+  \item \textbf{System Details:} \href{https://rancher.dev.lsst.org}{Rancher DEV}
 \end{itemize}
-\vspace*{0.01mm}
-\begin{center}
-  \small
-  \begin{tabular}{||c c c c c c||}
-    \hline
-    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{System Storage} & \textbf{Docker Storage}\\ [0.5ex]
-    \hline
-    ruka01.dev.lsst.org & 32 & 77GB & 2x10GB & 2TB & 1TB \\
-    \hline
-    ruka02.dev.lsst.org & 32 & 77GB & 2x10GB & 2TB & 1TB \\
-    \hline
-    ruka03.dev.lsst.org & 32 & 77GB & 2x10GB & 2TB & 1TB \\
-    \hline
-    ruka04.dev.lsst.org & 32 & 125GB & 2x10GB & 2TB & 1TB \\
-    \hline
-    ruka05.dev.lsst.org & 32 & 125GB & 2x10GB & 2TB & 1TB \\
-    \hline
-    ruka06.dev.lsst.org & 32 & 125GB & 2x10GB & 2TB & 1TB \\
-    \hline
-  \end{tabular}
-\end{center}
 
-\newpage
-\subsubsection{Rancher LS}
+\subsubsection{Kueyen}
 \begin{itemize}
   \itemsep0em 
-  \item \textbf{Name:}       Rancher LS
+  \item \textbf{Name:}       IT Development Kubernetes Cluster
   \item \textbf{Platform:}   Kubernetes
   \item \textbf{Multicast:}  No
-  \item \textbf{Apps:}       Rancher WUI
-  \item \textbf{Nodes:}      3
-  \item \textbf{CPU:}        12
-  \item \textbf{RAM Memory:} 21GB
-  \item \textbf{Usable Storage:}   120GB
+  \item \textbf{Apps:}       Several Dev. Instances
+  \item \textbf{System Details:} \href{https://rancher.dev.lsst.org}{Rancher DEV}
 \end{itemize}
-\begin{center}
-  \small
-  \begin{tabular}{||c c c c c c||}
-    \hline
-    \textbf{Node} & \textbf{CPU} & \textbf{Memory} & \textbf{Network} & \textbf{Host} & \textbf{System Storage} \\ [0.5ex]
-    \hline
-    rancher01.ls.lsst.org & 4 & 7GB & 1x1GB & core01.ls.lsst.org & 40GB \\
-    \hline
-    rancher02.ls.lsst.org & 4 & 7GB & 1x1GB & core02.ls.lsst.org & 40GB \\
-    \hline
-    rancher03.ls.lsst.org & 4 & 7GB & 1x1GB & core03.ls.lsst.org & 40GB \\
-    \hline
-  \end{tabular}
-\end{center}
+
+\subsubsection{NamKueyen}
+\begin{itemize}
+  \itemsep0em 
+  \item \textbf{Name:}       IT Development Kubernetes Cluster
+  \item \textbf{Platform:}   Kubernetes
+  \item \textbf{Multicast:}  No
+  \item \textbf{Apps:}       Several Dev. Instances
+  \item \textbf{System Details:} \href{https://rancher.dev.lsst.org}{Rancher DEV}
+\end{itemize}
+
+\subsubsection{Chango}
+\begin{itemize}
+  \itemsep0em 
+  \item \textbf{Name:}       IT Storage Cluster
+  \item \textbf{Platform:}   Kubernetes
+  \item \textbf{Multicast:}  No
+  \item \textbf{Apps:}       Rook
+  \item \textbf{System Details:} \href{https://rancher.ls.lsst.org}{Rancher LS}
+\end{itemize}
+
+

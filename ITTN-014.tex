@@ -17,7 +17,7 @@
 % \setDocSubtitle{A subtitle}
 
 \author{%
-Ivan Gonzalez
+Ivan Gonzalez, Heinrich Reinking, Cristian Silva
 }
 
 \setDocRef{ITTN-014}
@@ -29,15 +29,9 @@ Ivan Gonzalez
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-The Vera Rubin Observatory Computer Infrastructure is formed by four sites: La Serena, Cerro Pachon, Tucson and Cloud, each composed of several server's clusters. This document details each Cluster's amount of Nodes, Processing Capacity (CPU), Network Interfaces Information and Memory (RAM) Infrastructure per site.
-\linebreak\linebreak The Physical Storage information from each cluster will be devided into three:
-\begin{itemize}
-  \itemsep0em 
-  \item \textbf{System Storage:} Represents the Disk Storage capacity that the OS has control of - /, /etc, /usr, /lib, /home, /var, /root, /opt-.
-  \item \textbf{Data Storage:} Disk unit space dedicated for data storage or common pool contribution.
-  \item \textbf{Docker Storage:} Storage Unit dedicated for running docker images - /var/lib/docker/-.
-  \item \textbf{Usable Kubernetes Storage}: All Rubin Clusters are provisioned with rook-ceph. Rook orchestrates ceph storage between the distributed nodes, allowing self-managing, self-scaling, and self healing storage services. The Usable Kubernetes Storage is then the total amount of usable space for the PV's (over kubernetes).
-\end{itemize}
+The Vera Rubin Observatory Computer Infrastructure is formed by four sites: La Serena, Cerro Pachon, Tucson and Cloud, each composed of several clusters and nodes that support the operations. This document details each node and cluster's function and a link to review the hardware details of the clusters. 
+Please keep in mind that a valid Rubin account is necessary to review the details of the clusters.
+
 }
 
 % Change history defined here.
@@ -54,6 +48,7 @@ The Vera Rubin Observatory Computer Infrastructure is formed by four sites: La S
   \addtohist{7}{2022-02-25}{General Update and add Luan Cluster}{Heinrich Reinking}
   \addtohist{8}{2022-05-5}{Add Lukay and Gaw Cluster}{Heinrich Reinking}
   \addtohist{9}{2022-09-8}{Add Chonchon Cluster}{Heinrich Reinking}
+  \addtohist{10}{2023-07-15}{Massive Content Revamp}{Cristian Silva}
 }
 
 
